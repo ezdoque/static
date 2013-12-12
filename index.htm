@@ -38,7 +38,8 @@ function logEvent(e) {
     if (type == 'error' && navigator.onLine) {
         message+= ' (prolly a syntax error in manifest)';
     }
-    console.log(message);
+    //console.log(message);
+alert(message);
 }
 
 window.applicationCache.addEventListener(
@@ -50,7 +51,7 @@ window.applicationCache.addEventListener(
     false
 );
 
-setInterval(function(){cache.update()}, 10000);
+// setInterval(function(){cache.update()}, 10000);
 
 </script>
 <h1>TEST</h1>
