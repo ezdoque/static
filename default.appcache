@@ -6,13 +6,8 @@ CACHE:
 index.htm
 stylesheet.css
 main.js
-touch-icon-iphone.png
-touch-icon-ipad.png
-touch-icon-iphone-retina.png
-touch-icon-ipad-retina.png
 
 # Resources that require the user to be online.
 NETWORK:
 
 FALLBACK:
-
