@@ -39,10 +39,9 @@ function logEvent(e) {
         message+= ' (prolly a syntax error in manifest)';
     }
     //console.log(message);
-//alert(message);
-var div = document.getElementById("logDiv");
+    var div = document.getElementById("logDiv");
 
-div.innerHTML = div.innerHTML + "<p>" + message + "</p>";
+    div.innerHTML = div.innerHTML + "<p><b>" + Date.toLocaleTimeString() + ":</b>&nbsp;" + message + "</p>";
 }
 
 window.applicationCache.addEventListener(
@@ -58,6 +57,6 @@ setInterval(function(){cache.update()}, 10000);
 
 </script>
 <h1>TEST</h1>
-<div id="logDiv"></div>
+<div id="logDiv" style="font-size:6pt;"></div>
 </body>
 </html>
