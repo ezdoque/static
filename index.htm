@@ -39,7 +39,10 @@ function logEvent(e) {
         message+= ' (prolly a syntax error in manifest)';
     }
     //console.log(message);
-alert(message);
+//alert(message);
+var div = document.getElementById("logDiv");
+
+div.innerHTML = div.innerHTML + "<p>" + message + "</p>";
 }
 
 window.applicationCache.addEventListener(
@@ -55,5 +58,6 @@ window.applicationCache.addEventListener(
 
 </script>
 <h1>TEST</h1>
+<div id="logDiv"></div>
 </body>
 </html>
