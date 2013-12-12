@@ -1,5 +1,13 @@
 <!DOCTYPE html>
 <html manifest="default.appcache">
+<head>
+    <meta name="viewport" content="user-scalable=no, width=device-width, initial-scale=1.0, maximum-scale=1.0"/>
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+
+    <title>Test Offline</title>
+</head>
+<body>
 <script language="javascript">
 var cacheStatusValues = [];
 cacheStatusValues[0] = 'uncached';
@@ -46,4 +54,5 @@ setInterval(function(){cache.update()}, 10000);
 
 </script>
 <h1>TEST</h1>
+</body>
 </html>
