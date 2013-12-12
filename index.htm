@@ -41,7 +41,7 @@ function logEvent(e) {
     //console.log(message);
     var div = document.getElementById("logDiv");
 
-    div.innerHTML = div.innerHTML + "<p><b>" + Date.toLocaleTimeString() + ":</b>&nbsp;" + message + "</p>";
+    div.innerHTML = div.innerHTML + "<p><b>" + (new Date()).toLocaleTimeString() + ":</b>&nbsp;" + message + "</p>";
 }
 
 window.applicationCache.addEventListener(
